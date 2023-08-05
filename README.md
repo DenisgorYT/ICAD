@@ -23,7 +23,7 @@
 Открываем вкладку *Web*\
 Кликаем на *Add a new web app*\
 В появившемся окошке *next*  -> *Flask* -> *Python3.8*\
-В путь вводим /home/`имя аккаунта`/IrCA-Fork/start.py
+В путь вводим /home/`имя аккаунта`/ICADk/start.py
 
 
 Тыкаем на вкладку *Files*. Смотрим на картинку:\
@@ -33,7 +33,7 @@
 ```python
 import os
 os.system('rm -rf ICAD')
-os.system('git clone https://github.com/DenisgorYT/IrCA-Fork')
+os.system('git clone https://github.com/DenisgorYT/ICAD')
 ```
 
 
@@ -61,7 +61,7 @@ os.system('git clone https://github.com/DenisgorYT/IrCA-Fork')
 Если дежурный не работает, открываем *Files* и создаём в любом месте файл **upd.py**. Вставляем в него следующий текст и тыкаем кнопочку *Run*:
 ```python
 import os
-os.system('cd ~/IrCA-Fork; git fetch --all; git reset --hard origin/master-beta')
+os.system('cd ~/ICAD; git fetch --all; git reset --hard origin/master-beta')
 ```
 
 ## Команды
