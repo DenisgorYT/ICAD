@@ -17,7 +17,6 @@ from duty.objects import dp, MySignalEvent
 def a(event: MySignalEvent) -> str:
     event.edit(f'''
         📗Команды IrCA Duty: vk.com/@ircaduty-comands
-        💻 Исходный код: https://vk.cc/bZPeP4
         🔧 Установка LP: https://vk.cc/c3cpNq
         📈 Команды LP: https://vk.cc/c3cpUH
         📓 Ваша админ панель: {event.db.host}
