@@ -16,7 +16,7 @@ def messages_recognise_Audio_Message(event: Event) -> str:
             break
         except:
             if count>=9:
-                transcript='Время ожидания вышло. Не удалось распознать!'
+                transcript='Время ожидания вышло. Не удалось распознать! (или мне было лень)'
                 break
             else:
                 time.sleep(0.5)
