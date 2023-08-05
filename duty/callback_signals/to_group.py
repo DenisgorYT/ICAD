@@ -1,4 +1,4 @@
-# TODO: навести красоту
+# TODO: навести красоту (Без б наводи)
 import typing
 from duty.api_utils import get_msg
 from duty.objects import dp, Event, SignalEvent
@@ -114,7 +114,7 @@ def to_group(event: Event) -> str:
                       attachment=f"wall-{event.obj['group_id']}_{data['post_id']}")
         else:
             date = datetime.fromtimestamp(publish_date)
-            send(f'Запись будет опубликована\n{date.ctime()}') # TODO: формат для тупых и отсталых
+            send(f'Запись будет опубликована\n{date.ctime()}') # TODO: формат для тупых и отсталых (Ок буду знать)
     except VkApiResponseException as e:
         if e.error_code == 214:
             send(event.responses['to_group_err_forbidden'])
