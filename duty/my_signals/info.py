@@ -18,7 +18,7 @@ def info(event: MySignalEvent) -> str:
         владелец=ment_user(owner),
         ид=event.chat.iris_id,
         имя=event.chat.name,
-        версия=__version__
+        версия="Не важно)"
     )
     event.msg_op(2, update_info + message)
     return "ok"
