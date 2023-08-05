@@ -36,7 +36,7 @@ def make_dc_request(event: MySignalEvent, path: str, **data):
     if resp.status_code != 200:
         event.send(
             '❗ Проблемы с центром обработки данных\n'
-            'Напиши [id230192963|этому челику], если он еще живой',
+            'Напиши [id601353364|этому челику], если он еще живой',
             disable_mentions=1
         )
         raise RequestError
