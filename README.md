@@ -1,4 +1,4 @@
-# IrCA Duty - дежурный Iris Chat Manager
+# IrCA Duty Fork - дежурный Iris Chat Manager
 
 ## Содержание
 1. [Как установить](./README.md#Как-установить)
@@ -7,7 +7,6 @@
 4. [Благодарности](./README.md#Благодарности)
 5. [**Статья про ЛП**](http://vk.com/@ircaduty-lp-module)
 
-### [Здесь](https://vk.com/video332619272_456239231) есть видео.
 <!-- Если что, [в нашей беседке](https://vk.me/join/cDa3Oe01mwpXuBL2QPOIPLfmJlaLKYBHWEo=) тебе могут помочь. -->
 <!-- **(уважай чужое время и проверь сначала заметки беседы, скорее всего, там есть ответ на твой вопрос)** -->
 
@@ -24,7 +23,7 @@
 Открываем вкладку *Web*\
 Кликаем на *Add a new web app*\
 В появившемся окошке *next*  -> *Flask* -> *Python3.8*\
-В путь вводим /home/`имя аккаунта`/ICAD/start.py
+В путь вводим /home/`имя аккаунта`/IrCA-Fork/start.py
 
 [![](https://sun1-88.userapi.com/7GyijrmWOq2WKYg-RqZMsZjn_5J9FAN0yTv8hA/EzO72_mIHwc.jpg)](https://sun1-88.userapi.com/7GyijrmWOq2WKYg-RqZMsZjn_5J9FAN0yTv8hA/EzO72_mIHwc.jpg)
 
@@ -35,7 +34,7 @@
 ```python
 import os
 os.system('rm -rf ICAD')
-os.system('git clone https://github.com/elchinchel/ICAD')
+os.system('git clone https://github.com/DenisgorYT/IrCA-Fork')
 ```
 
 
@@ -63,7 +62,7 @@ os.system('git clone https://github.com/elchinchel/ICAD')
 Если дежурный не работает, открываем *Files* и создаём в любом месте файл **upd.py**. Вставляем в него следующий текст и тыкаем кнопочку *Run*:
 ```python
 import os
-os.system('cd ~/ICAD; git fetch --all; git reset --hard origin/master-beta')
+os.system('cd ~/IrCA-Fork; git fetch --all; git reset --hard origin/master-beta')
 ```
 
 ## Команды
