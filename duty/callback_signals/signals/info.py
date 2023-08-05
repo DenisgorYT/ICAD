@@ -14,7 +14,7 @@ def sinfo(event: SignalEvent) -> str:
 
     event.send(format_response(
         event.responses['info_duty'], 
-        Разрабочик_форка=': @mr_denisgoryt',
+        Разрабочик_форка=": @mr_denisgoryt",
         версия='Не важно)',
         владелец=ment_user(owner),
         чаты=len(event.db.chats.keys()),
