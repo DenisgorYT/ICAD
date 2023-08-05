@@ -3,7 +3,7 @@ from duty.utils import format_response
 from datetime import datetime
 
 
-@dp.signal_event_register('пинг', 'пиу', 'кинг', 'тик')
+@dp.signal_event_register('пинг', 'пиу', 'кинг', 'тик', 'ping')
 def ping(event: SignalEvent) -> str:
     c_time = datetime.now().timestamp()
     delta = round(c_time - event.msg['date'], 2)
