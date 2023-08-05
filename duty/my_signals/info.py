@@ -3,8 +3,8 @@ from duty.utils import ment_user, format_response
 from .updating import get_last_version
 
 
-@dp.longpoll_event_register('инфо', 'инфа', '-i', 'info')
-@dp.my_signal_event_register('инфо', 'инфа', '-i', 'info')
+@dp.longpoll_event_register('инфо', 'инфа', '-i', 'info', 'дежинфо', 'дежинфа')
+@dp.my_signal_event_register('инфо', 'инфа', '-i', 'info', 'дежинфо', 'дежинфа')
 def info(event: MySignalEvent) -> str:
     update_info = ''
     last_v, changes = get_last_version()
@@ -16,9 +16,10 @@ def info(event: MySignalEvent) -> str:
     message = format_response(event.responses['info_myself'], 
         чаты=len(event.db.chats.keys()),
         владелец=ment_user(owner),
+        Разрабочик_форка=': @mr_denisgoryt',
         ид=event.chat.iris_id,
         имя=event.chat.name,
-        версия="Не важно)"
+        версия=': Не важно)'
     )
     event.msg_op(2, update_info + message)
     return "ok"
