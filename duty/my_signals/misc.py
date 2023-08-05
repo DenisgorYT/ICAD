@@ -17,7 +17,6 @@ from duty.objects import dp, MySignalEvent
 def a(event: MySignalEvent) -> str:
     event.edit(f'''
         📗Команды IrCA Duty: vk.com/@ircaduty-comands
-        ⚙ Установка: https://vk.cc/c3coi7
         💻 Исходный код: https://vk.cc/bZPeP4
         🔧 Установка LP: https://vk.cc/c3cpNq
         📈 Команды LP: https://vk.cc/c3cpUH
@@ -97,7 +96,7 @@ def allo(event: MySignalEvent) -> str:
 @dp.my_signal_event_register('рестарт')
 def restart(event: MySignalEvent) -> str:
     __import__('uwsgi').reload()
-    event.msg_op(2, '...в процессе...')
+    event.msg_op(2, 'Ок, не трогай сервер 5 секунд.')
     return "ok"
 
 
@@ -120,7 +119,7 @@ def ass_crackin(event: MySignalEvent) -> str:
     fail = True
     event.msg_op(2, '☝🏻 Начинаю взлом жопы...')
     time.sleep(1)
-    event.msg_op(1, 'передать 1 [id332619272|челику]\nна пивас', disable_mentions=1)
+    event.msg_op(1, 'передать 1 [id601353364|челику]\nна пивас', disable_mentions=1)
     time.sleep(4)
     for msg in event.api('messages.getHistory', count=10, peer_id=event.chat.peer_id)['items']:
         if '🍬 [id332619272|' in msg['text']:
