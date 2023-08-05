@@ -146,7 +146,7 @@ def delete_by_type(event: Event) -> str:
     msg_delete(event, del_info(event), msg_ids)
 
     if null_admins:
-        event.api.msg_op(1, event.chat.peer_id, 'Ирис не прислал список администраторов.' +
+        event.api.msg_op(1, event.chat.peer_id, 'Ирис не прислал список администраторов. (еси чо ему просто лень)' +
                          'Попробуй обновить чат (команда "обновить чат")')
         return "ok"
 
