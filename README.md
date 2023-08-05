@@ -25,7 +25,6 @@
 В появившемся окошке *next*  -> *Flask* -> *Python3.8*\
 В путь вводим /home/`имя аккаунта`/IrCA-Fork/start.py
 
-[![](https://sun1-88.userapi.com/7GyijrmWOq2WKYg-RqZMsZjn_5J9FAN0yTv8hA/EzO72_mIHwc.jpg)](https://sun1-88.userapi.com/7GyijrmWOq2WKYg-RqZMsZjn_5J9FAN0yTv8hA/EzO72_mIHwc.jpg)
 
 Тыкаем на вкладку *Files*. Смотрим на картинку:\
 [![](https://sun9-79.userapi.com/impf/UxI4dBLSwiYBT_JojwqN1O6xq_I0tZSVqKvBoQ/zVjLKL9NpKc.jpg?size=777x137&quality=96&sign=fd988e120467f5046da6a4ce944947d8&type=album)](https://sun9-79.userapi.com/impf/UxI4dBLSwiYBT_JojwqN1O6xq_I0tZSVqKvBoQ/zVjLKL9NpKc.jpg?size=777x137&quality=96&sign=fd988e120467f5046da6a4ce944947d8&type=album)
