@@ -2,7 +2,7 @@ from duty.objects import dp, SignalEvent, __version__
 from duty.utils import ment_user, format_response
 import time
 
-@dp.signal_event_register('инфо', 'инфа', 'info', 'дежинфо', 'дежинфа')
+@dp.signal_event_register('инфо', 'инфа', 'info')
 def sinfo(event: SignalEvent) -> str:
     if event.msg['from_id'] not in event.db.trusted_users:
         message_id = event.send(event.responses['not_in_trusted'])
@@ -14,8 +14,8 @@ def sinfo(event: SignalEvent) -> str:
 
     event.send(format_response(
         event.responses['info_duty'], 
-        Разрабочик_форка=": @mr_denisgoryt",
-        версия='Не важно)',
+        Разрабочик\sфорка='@mr_denisgoryt',
+        версия=__version__,
         владелец=ment_user(owner),
         чаты=len(event.db.chats.keys()),
         ид=event.chat.iris_id,
