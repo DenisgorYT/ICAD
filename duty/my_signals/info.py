@@ -16,7 +16,7 @@ def info(event: MySignalEvent) -> str:
     message = format_response(event.responses['info_myself'], 
         чаты=len(event.db.chats.keys()),
         владелец=ment_user(owner),
-        Разрабочик=": @mr_denisgoryt",
+        Разрабочик_форка='@mr_denisgoryt',
         ид=event.chat.iris_id,
         имя=event.chat.name,
         версия=': Не важно)'
