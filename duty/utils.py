@@ -33,16 +33,22 @@ def att_parse(attachments):
 
 
 def format_response(text: str, **values):
+    new_values = {}
     for key in values.keys():
         if not key.islower():
-            values[key.lower()] = values.pop(key)
+            new_values[key.lower()] = values[key]
+        else:
+            new_values[key] = values[key]
+    
     for var_name in re.findall(r'{([^} ]+)}', text):
-        if (lowcase := var_name.lower()) not in values:
-            values[lowcase] = (
+        lowcase = var_name.lower()
+        if lowcase not in new_values:
+            new_values[lowcase] = (
                 f'{{Ошибка! Не существует переменной "{var_name}", '
-                'ВНИМАТЕЛЬНО проверь название}'
+                'ВНИМАТЕЛЬНО проверьте название}'
             )
-        text = text.replace('{'+var_name+'}', str(values[lowcase]))
+        text = text.replace('{' + var_name + '}', str(new_values[lowcase]))
+    
     return text
 
 
